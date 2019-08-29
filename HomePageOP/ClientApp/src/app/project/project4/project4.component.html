@@ -1,0 +1,73 @@
+<div>
+  <div id="Hotel" class="card" mdbScrollSpyElement="scrollspy1">
+    <h3 class="h3 card-header text-center projectcolor1">Hotel Reservation</h3>
+
+    <div class="row card-body">
+      <div class="col-md-4 card-img">
+        <img class="img-fluid img-thumbnail" src="/assets/images/webp/Hotel Reservations.webp" alt="Hotel Reservation image" />
+      </div>
+      <div class="col-md-8">
+        <div class="row edge-header heavy-rain-gradient">
+          <p>
+            This is an example of a SQL Server database to be used
+            by a hotel reservation system.
+          </p>
+        </div>
+
+        <h4 class="h4 card-title text-center shadow">Features</h4>
+
+        <div class="row card-text font-weight-bold">
+
+          <div class="col-md-6">SQL Server 2016</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="row w-100">
+
+        <div class="btn-group-lg" role="group" aria-label="First group">
+          <a class="btn btn-primary"
+             href="https://github.com/richardturnmire/HotelReservationSystem"
+             role="button" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+
+          <button type="button" class="btn btn-primary btn-dialog" (click)="buttonClick($event)" data-toggle="modal" data-target="#modalPDFDisplay" data-whatever="/assets/images/HotelReservations_HighLevel.pdf#Page=1&Zoom=page-width">High Level ERD</button>
+          <button type="button" class="btn btn-primary btn-dialog" (click)="buttonClick($event)" data-toggle="modal" data-target="#modalPDFDisplay" data-whatever="/assets/images/HotelReservations_RoomLevel.pdf#Page=1&Zoom=page-width">Room Level ERD</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--Modal: modalHighLevel-->
+    <div class="modal fade" id="modalPDFDisplay" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="highLevelTitle"
+         data-backdrop="true" data-fullscreen="true" data-keyboard="true">
+      <div class="modal-dialog modal-fluid" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header">
+            <h3 class="modal-title h3" id="highLevelTitle">High Level ERD</h3>
+
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div id="modalBody" class="modal-body h-75 w-100 bg-warning">
+            <div class="container-fluid h-100">
+              <div class="row w-100 h-100 mx-auto">
+                <object data="dummy" class="h-100 w-100"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!--Modal: modalHighLevel-->
+
+  </div>
+</div>
+

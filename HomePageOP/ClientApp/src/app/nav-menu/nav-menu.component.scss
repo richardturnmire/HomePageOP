@@ -1,0 +1,41 @@
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+header {
+  height: 10vh !important;
+  border: 3px solid green;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+nav {
+  height: 10vh;
+  z-index: 1040;
+}
+
+/*navbar {
+  z-index: 1040;
+  height: 10vh;
+  color: black;
+}*/
+
+.side-nav {
+  margin-top: 49px !important;
+}
+
+.double-nav .breadcrumb-dn p {
+  color: #fff;
+}

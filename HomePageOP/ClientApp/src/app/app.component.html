@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-nav-menu></app-nav-menu>
+
+<div id="backToTop" class="fixed-action-btn smooth-scroll" (click)="moveTo('home', 0)">
+  <a href="#" class="btn-floating btn-large">
+    <i class="fa fa-arrow-up fa-3x  rounded-circle white"></i>
+  </a>
+</div>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div id ="home" class="section" data-anchor="home">
+    <app-home></app-home>
+  </div>
+  <div  class="section" data-anchor="skillsPage" id="resume"><app-resume-skills></app-resume-skills></div>
+  <div class="section" data-anchor="sgPage"><app-resume-sg></app-resume-sg></div>
+  <div class="section" data-anchor="cebPage"><app-resume-ceb></app-resume-ceb></div>
+  <div class="section" data-anchor="transcentraPage"><app-resume-transcentra></app-resume-transcentra></div>
+  <div class="section" data-anchor="ftPage"><app-resume-ft></app-resume-ft></div>
+  <div class="section" data-anchor="consultingPage"><app-resume-consulting></app-resume-consulting></div>
+  <div class="section" data-anchor="educationPage"><app-resume-education></app-resume-education></div>
+  <div id="projects" class="section" data-anchor="projectsPage">
+    <div class="slide" data-anchor="project1Slide">
+      <app-project1></app-project1>
+    </div>
+    <div class="slide" data-anchor="project2Slide"><app-project2></app-project2></div>
+    <div class="slide" data-anchor="project3Slide"><app-project3></app-project3></div>
+    <div class="slide" data-anchor="project4Slide"><app-project4></app-project4></div>
+  </div>
+  <div id="favorites" class="section" data-anchor="favoritesPage"><app-favorite></app-favorite></div>
+  <div class="contact" data-anchor="contactPage"><app-contact></app-contact></div>
+
+  </div>
+
+
+
+
+  <router-outlet></router-outlet>
+
